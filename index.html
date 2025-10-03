@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Início</a> | 
+        <a href="/sobre">Sobre</a> | 
+        <a href="https://www.python.org" target="_blank">Python.org</a>
+    </nav>
+    <h1>Bem-vindo ao site Flask!</h1>
+    <p>Veja uma imagem local:</p>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Local" width="150">
+    <p>E uma imagem externa:</p>
+    <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" width="200">
+    <p>Acesse o <a href="https://www.python.org" target="_blank">site oficial do Python</a>.</p>
+</body>
+</html>

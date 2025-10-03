@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Sobre</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Início</a> | 
+        <a href="/sobre">Sobre</a>
+    </nav>
+    <h1>Sobre este site</h1>
+    <p>Este é um exemplo de site feito com Flask, contendo imagens, links e múltiplas páginas.</p>
+    <img src="{{ url_for('static', filename='logo.png') }}" alt="Logo Local" width="150">
+    <p><a href="/">Voltar para a página inicial</a></p>
+</body>
+</html>
